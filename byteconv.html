@@ -1,0 +1,87 @@
+<title>Byte Converter</title>
+<table width="100%" cellpadding="10" cellspacing="0">
+
+          <!-- InstanceBeginEditable name="EditRegion1" -->
+      <tr>
+        <td width="100%" colspan="2"><div align="center">
+            <h1><b><font size="3">Convert Bytes 
+              to Kilobytes to Megabytes<br />
+              to Gigabytes, and Vice Versa</font><font size="3"></font></b><font color="#990000"><b><font size="3"><br />
+                            </font></b></font>
+                <script language="JavaScript" type="text/javascript"><!--
+
+  function convert(f) {
+    f.kb.value=Math.round(f.byte.value/1024*100000)/100000
+    f.mb.value=Math.round(f.byte.value/1048576*100000)/100000
+    f.gb.value=Math.round(f.byte.value/1073741824*100000)/100000
+     
+  }
+
+function convertkb(f) {
+    f.byte.value=Math.round(f.kb.value*1024*100000)/100000
+    f.mb.value=Math.round(f.kb.value/1024*100000)/100000
+    f.gb.value=Math.round(f.kb.value/1048576*100000)/100000
+     
+  }
+
+function convertmb(f) {
+    f.byte.value=Math.round(f.mb.value*1048576*100000)/100000
+    f.kb.value=Math.round(f.mb.value*1024*100000)/100000
+    f.gb.value=Math.round(f.mb.value/1024*100000)/100000
+     
+  }
+
+function convertgb(f) {
+    f.byte.value=Math.round(f.gb.value*1073741824*100000)/100000
+    f.kb.value=Math.round(f.gb.value*1048576*100000)/100000
+    f.mb.value=Math.round(f.gb.value*1024*100000)/100000
+     
+  }
+  
+
+// --></script>
+
+            </h1>
+          </div>
+          <p></p>
+          <form>
+            <table border="3" align="center" cellpadding="3" cellspacing="3" bgcolor="#FFFFA8">
+              <tr>
+                <td align="center"><font size="5" face="Arial, Helvetica, sans-serif"><strong>Byte</strong></font></td>
+                <td align="center"><b><font size="5" face="Arial, Helvetica, sans-serif"><strong>Kilobyte</strong></font></b></td>
+
+                <td align="center"><b><font size="5" face="Arial, Helvetica, sans-serif">Megabyte</font></b></td>
+                <td align="center"><font size="5" face="Arial, Helvetica, sans-serif"><b>Gigabyte</b></font></td>
+              </tr>
+              <tr>
+                <td align="center"><input type="text" size="10"
+        name="byte" value="0" />
+                </td>
+                <td align="center"><input type="text" size="10"
+        name="kb" value="0" />
+                </td>
+
+                <td align="center"><input type="text" size="10"
+        name="mb" value="0" />
+                </td>
+                <td align="center"><input type="text" size="10"
+        name="gb" value="0" />
+                </td>
+              </tr>
+              <tr>
+                <td align="center"><input type="button" name="B2" value="   &gt;   "
+        onclick="convert(this.form)" />
+                </td>
+                <td align="center"><input type="button" name="B22" value="   &lt; &gt;   "
+        onclick="convertkb(this.form)" />
+
+                </td>
+                <td align="center"><input type="button" name="B23" value="   &lt; &gt;   "
+        onclick="convertmb(this.form)" />
+                </td>
+                <td align="center"><input type="button" name="B24" value="   &lt;   "
+        onclick="convertgb(this.form)" />
+                </td>
+              </tr>
+            </table>
+          </form>
