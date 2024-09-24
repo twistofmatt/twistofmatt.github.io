@@ -224,6 +224,17 @@
 ]},
 {"dinoType": "Blueprint'/Game/PrimalEarth/Dinos/Trilobite/Trilobite_Character.Trilobite_Character'", 
 "produces":[
+{
+"intervalSeconds": 240.00,
+"alternateItemChance": 0.25,
+"items": [
+"Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_Silicon.PrimalItemResource_Silicon'"
+],
+"alternateItems": [
+"Blueprint'/Game/PrimalEarth/CoreBlueprints/Resources/PrimalItemResource_BlackPearl.PrimalItemResource_BlackPearl'"
+]
+}
+
 ]}
 
 
